@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasteful Treasures</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  </head>
+
+  <!------------------------------------------------------------------------------------------------------------->
+
+  <body>
+    <!-- Head section name + navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg p-3 sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><span class="navbar-name-1">Tasteful Treasures</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="recipe.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Recipe
+                </a>
+                <ul class="dropdown-menu" id="dp-menu">
+                  <li>
+                    <a class="dropdown-item one" href="recipe.html">Our's</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item one" href="recipe2.html">Your's</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-user"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!------------------------------------------------------------------------------------------------------------->
+    <!-- Recipies-home-One-->
+    <section class="Recipe-home-page">
+      <div class="Recipe-home-page-1">
+        <h2>Recipes</h2>
+        <p>
+          We’ve categorized our recipes in every way possible to make it easier
+          for you! Whether you need dietary-specific dishes, quick weeknight
+          dinners, meal prep ideas, or our most tried-and-true favorites, you’ll
+          find exactly what you’re looking for.
+        </p>
+      </div>
+
+      <div class="search-bar" id="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" />
+        <div class="search-button">Search</div>
+      </div>
+    </section>
+  
+    <!------------------------------------------------------------------------------------------------------------->
+    <!-- Recipies-Our best recipe-->
+    <section class="our">
+      
+     <!-- Non -veg -->
+     <div class="NVG">
+      <div class="NVG-heading">
+        <h2>Non-Veg</h2>
+      </div>
+      <!-- content -->
+      <div class="Non-veg">
+      
+        <div class="recipe-card">
+          <div class="recipe-card-img-box">
+            <img src="Non-veg/spaggatti.jpg" alt="Shrimp Spaghetti" class="recipe-card-img">
+          </div>
+          <div class="recipe-content">
+            <h3 class="recipe-title">Shrimp Spaghetti</h3>
+            <p class="recipe-description">Delicious spaghetti pasta with succulent shrimp in a savory tomato sauce.</p>
+            <div class="ingredients">
+              <h3>Ingredients</h3>
+              <ul>
+                <li>1 lb shrimp, peeled and deveined</li>
+                <li>8 oz spaghetti pasta</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1/4 cup olive oil</li>
+                <li>1 cup tomato sauce</li>
+                <li>1/2 tsp red pepper flakes</li>
+                <li>Salt and pepper to taste</li>
+                <li>Fresh parsley for garnish</li>
+              </ul>
+            </div>
+            <div class="directions">
+              <h3 class="toggle-btn">Directions <i class="fa-solid fa-angle-down"></i></h3>
+              <ol class="directions-list">
+                <li>Cook spaghetti according to package instructions until al dente. Drain and set aside.</li>
+                <li>In a large skillet, heat olive oil over medium heat. Add minced garlic and red pepper flakes. Sauté until garlic is fragrant.</li>
+                <li>Add shrimp to the skillet and cook until they turn pink and opaque, about 2-3 minutes per side. Season with salt and pepper.</li>
+                <li>Pour in tomato sauce and simmer for 5-7 minutes, allowing flavors to meld together.</li>
+                <li>Add cooked spaghetti to the skillet and toss to coat evenly with the sauce.</li>
+                <li>Remove from heat and garnish with fresh parsley.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        
+        <div class="recipe-card">
+          <div class="recipe-card-img-box">
+            <img src="Non-veg/Briyani12.jpg" alt="Chicken Biryani" class="recipe-card-img">
+          </div>
+          <div class="recipe-content">
+            <h3 class="recipe-title">Chicken Biryani</h3>
+            <p class="recipe-description">A flavorful and aromatic Indian rice dish with marinated chicken and spices.</p>
+            <div class="ingredients">
+              <h3>Ingredients</h3>
+              <ul>
+                <li>1 lb chicken, cut into pieces</li>
+                <li>2 onions, finely chopped</li>
+                <li>3 tomatoes, pureed</li>
+                <li>2 tbsp ginger-garlic paste</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>1 tbsp coriander powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>Salt to taste</li>
+                <li>2 tbsp oil</li>
+                <li>Fresh cilantro leaves for garnish</li>
+              </ul>
+            </div>
+            <div class="directions">
+              <h3 class="toggle-btn">Directions <i class="fa-solid fa-angle-down"></i></h3>
+              <ol class="directions-list">
+                <li>Rinse and soak the basmati rice for 30 minutes. Drain and set aside.</li>
+                <li>Marinate the chicken with yogurt, ginger-garlic paste, turmeric powder, red chili powder, and salt. Let it sit for 1 hour.</li>
+                <li>Heat oil in a large pot. Add the bay leaves and cinnamon stick. Sauté for a few seconds.</li>
+                <li>Add the onions and cook until golden brown. Add the marinated chicken and cook until the chicken is no longer pink.</li>
+                <li>Add the rice and mix well with the chicken and spices. Add enough water to cook the rice. Bring it to a boil.</li>
+                <li>Reduce the heat to low, cover the pot, and simmer until the rice is cooked and the water is absorbed.</li>
+                <li>Fluff the rice gently before serving.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-card-img-box">
+            <img src="Non-veg/lasagnya.jpg" alt="Lasagna" class="recipe-card-img">
+          </div>
+          <div class="recipe-content">
+            <h3 class="recipe-title">Lasagna</h3>
+            <p class="recipe-description">Classic Italian lasagna with layers of pasta, meat sauce, and creamy cheese filling.</p>
+            <div class="ingredients">
+              <h3>Ingredients</h3>
+              <ul>
+                <li>1 lb ground beef</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 jar (24 oz) marinara sauce</li>
+                <li>12 lasagna noodles, cooked</li>
+                <li>15 oz ricotta cheese</li>
+                <li>1 egg</li>
+                <li>2 cups shredded mozzarella cheese</li>
+                <li>1/2 cup grated Parmesan cheese</li>
+                <li>1/4 cup chopped fresh parsley</li>
+                <li>Salt and pepper to taste</li>
+              </ul>
+            </div>
+            <div class="directions">
+              <h3 class="toggle-btn">Directions <i class="fa-solid fa-angle-down"></i></h3>
+              <ol class="directions-list">
+                <li>Preheat oven to 375°F (190°C).</li>
+                <li>In a large skillet, cook ground beef over medium-high heat until browned. Add onion and garlic, and cook until onions are translucent.</li>
+                <li>Add marinara sauce to the skillet and simmer for 10 minutes. Season with salt and pepper.</li>
+                <li>In a mixing bowl, combine ricotta cheese, egg, Parmesan cheese, and chopped parsley. Season with salt and pepper.</li>
+                <li>To assemble the lasagna, spread a thin layer of meat sauce on the bottom of a 9x13 inch baking dish.</li>
+                <li>Arrange 4 lasagna noodles over the sauce. Spread half of the ricotta mixture over the noodles, then sprinkle with 1 cup of mozzarella cheese. Repeat layers.</li>
+                <li>Top with remaining meat sauce and sprinkle with remaining mozzarella cheese and Parmesan cheese.</li>
+                <li>Cover with foil and bake in preheated oven for 25 minutes. Remove foil and bake for an additional 25 minutes, until bubbly and golden.</li>
+                <li>Let lasagna stand for 10 minutes before slicing and serving.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-card-img-box">
+            <img src="Non-veg/patty.jpg" alt="Patty Burger" class="recipe-card-img">
+          </div>
+          <div class="recipe-content">
+            <h3 class="recipe-title">Patty Burger</h3>
+            <p class="recipe-description">Juicy beef patty with fresh vegetables and savory sauces, sandwiched in a toasted bun.</p>
+            <div class="ingredients">
+              <h3>Ingredients</h3>
+              <ul>
+                <li>1 lb ground beef</li>
+                <li>4 hamburger buns, split and toasted</li>
+                <li>4 slices cheddar cheese</li>
+                <li>4 lettuce leaves</li>
+                <li>4 slices tomato</li>
+                <li>4 slices red onion</li>
+                <li>4 slices pickles</li>
+                <li>1/4 cup mayonnaise</li>
+                <li>1/4 cup ketchup</li>
+                <li>1 tbsp mustard</li>
+                <li>Salt and pepper to taste</li>
+              </ul>
+            </div>
+            <div class="directions">
+              <h3 class="toggle-btn">Directions <i class="fa-solid fa-angle-down"></i></h3>
+              <ol class="directions-list">
+                <li>Preheat grill or skillet over medium-high heat.</li>
+                <li>Season ground beef with salt and pepper. Form into 4 patties.</li>
+                <li>Grill patties for 4-5 minutes per side, or until cooked to desired doneness.</li>
+                <li>Toast hamburger buns on the grill or skillet until lightly browned.</li>
+                <li>Spread mayonnaise on the bottom half of each bun. Top with lettuce, tomato slices, onion slices, and pickles.</li>
+                <li>Place cooked patties on top of the vegetables. Add a slice of cheese on each patty.</li>
+                <li>Spread ketchup and mustard on the inside of the top bun. Place on top of the cheese.</li>
+                <li>Serve immediately.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+      <!-- veg -->
+      <div class="NVG">
+        <div class="NVG-heading">
+          <h2>Veg</h2>
+        </div>
+        <!-- content -->
+        <div class="Non-veg">
+          <div class="recipe-card">
+            <div class="recipe-card-img-box">
+              <img src="Non-veg/v-1.jpg" alt="Salad" class="recipe-card-img">
+            </div>
+            <div class="recipe-content" >
+              <h3 class="recipe-title">Salad</h3>
+              <p class="recipe-description">Fresh and healthy salad with mixed greens, vegetables, and vinaigrette dressing.</p>
+              <div class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>Mixed greens</li>
+                  <li>Cucumbers</li>
+                  <li>Tomatoes</li>
+                  <li>Red onions</li>
+                  <li>Bell peppers</li>
+                  <li>Carrots</li>
+                  <li>Olive oil</li>
+                  <li>Balsamic vinegar</li>
+                  <li>Salt and pepper</li>
+                </ul>
+              </div>
+              <div class="directions">
+                <h3 class="toggle-btn">Directions <i class="fa-solid fa-angle-down"></i></h3>
+                <ol class="directions-list">
+                  <li>Wash and chop all vegetables.</li>
+                  <li>In a large bowl, toss together mixed greens, cucumbers, tomatoes, red onions, bell peppers, and carrots.</li>
+                  <li>Drizzle with olive oil and balsamic vinegar. Season with salt and pepper.</li>
+                  <li>Toss gently to combine.</li>
+                  <li>Serve chilled.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+      
+          <div class="recipe-card">
+            <div class="recipe-card-img-box">
+              <img src="Non-veg/paneer.jpg" alt="Paneer Butter Masala" class="recipe-card-img">
+            </div>
+            <div class="recipe-content">
+              <h3 class="recipe-title">Paneer Butter Masala</h3>
+              <p class="recipe-description">Creamy and flavorful paneer cubes cooked in a rich buttery tomato sauce.</p>
+              <div class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>Paneer (Indian cottage cheese)</li>
+                  <li>Butter</li>
+                  <li>Tomatoes</li>
+                  <li>Cashews</li>
+                  <li>Heavy cream</li>
+                  <li>Yogurt</li>
+                  <li>Ginger-garlic paste</li>
+                  <li>Spices (cumin, coriander, garam masala)</li>
+                  <li>Fresh cilantro</li>
+                  <li>Salt and pepper</li>
+                </ul>
+              </div>
+              <div class="directions">
+                <h3 class="toggle-btn">Directions <i class="fa-solid fa-angle-down"></i></h3>
+                <ol class="directions-list">
+                  <li>Prepare the paneer by frying or soaking in hot water.</li>
+                  <li>Blend tomatoes, cashews, and spices into a smooth paste.</li>
+                  <li>Heat butter in a pan, add ginger-garlic paste, and sauté.</li>
+                  <li>Pour the tomato-cashew paste and cook until the sauce thickens.</li>
+                  <li>Add paneer cubes and cream. Simmer until flavors blend.</li>
+                  <li>Garnish with fresh cilantro and serve hot with naan or rice.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+      
+          <div class="recipe-card">
+            <div class="recipe-card-img-box">
+              <img src="Non-veg/v4.jpg" alt="Veg Patty Burger" class="recipe-card-img">
+            </div>
+            <div class="recipe-content">
+              <h3 class="recipe-title">Veg Patty Burger</h3>
+              <p class="recipe-description">Delicious veggie patty with fresh vegetables and sauces, sandwiched in a toasted bun.</p>
+              <div class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>Veggie patty (made with beans, peas, and carrots)</li>
+                  <li>Hamburger buns, split and toasted</li>
+                  <li>Cheddar cheese slices</li>
+                  <li>Lettuce leaves</li>
+                  <li>Sliced tomatoes</li>
+                  <li>Sliced red onions</li>
+                  <li>Pickles</li>
+                  <li>Mayonnaise</li>
+                  <li>Ketchup</li>
+                  <li>Mustard</li>
+                  <li>Salt and pepper</li>
+                </ul>
+              </div>
+              <div class="directions">
+                <h3 class="toggle-btn">Directions <i class="fa-solid fa-angle-down"></i></h3>
+                <ol class="directions-list">
+                  <li>Heat veggie patty on a grill or skillet until heated through.</li>
+                  <li>Toast hamburger buns until lightly browned.</li>
+                  <li>Spread mayonnaise on the bottom half of each bun.</li>
+                  <li>Layer with lettuce, tomato slices, red onion slices, pickles, and a veggie patty.</li>
+                  <li>Add a slice of cheddar cheese on top of the patty.</li>
+                  <li>Spread ketchup and mustard on the inside of the top bun.</li>
+                  <li>Place on top of the cheese and assemble the burger.</li>
+                  <li>Serve immediately.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+      
+          <div class="recipe-card">
+            <div class="recipe-card-img-box">
+              <img src="Non-veg/french fries.jpg" alt="French Fries" class="recipe-card-img">
+            </div>
+            <div class="recipe-content">
+              <h3 class="recipe-title">French Fries</h3>
+              <p class="recipe-description">Crispy and golden French fries, perfect as a side or snack.</p>
+              <div class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>Potatoes</li>
+        <li>Vegetable oil for frying</li>
+        <li>Salt</li>
+        <li>Optional additional ingredients:</li>
+        <li>Black pepper</li>
+        <li>Paprika</li>
+        <li>Garlic powder</li>
+        <li>Onion powder</li>
+        <li>Chili powder</li>
+        <li>Grated Parmesan cheese</li>
+        <li>Fresh herbs like parsley or rosemary</li>
+                </ul>
+              </div>
+              <div class="directions">
+                <h3 class="toggle-btn">Directions <i class="fa-solid fa-angle-down"></i></h3>
+                <ol class="directions-list">
+                  <li>Peel and cut potatoes into strips.</li>
+                  <li>Soak in cold water for 30 minutes to remove excess starch.</li>
+                  <li>Drain and pat dry with paper towels.</li>
+                  <li>Heat oil in a deep fryer or skillet.</li>
+                  <li>Fry potatoes in batches until golden brown and crispy.</li>
+                  <li>Remove from oil and drain on paper towels.</li>
+                  <li>Season with salt while hot and serve immediately.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- desserts -->
+    
+
+      
+    </section>
+
+    <!------------------------------------------------------------------------------------------------------------->
+    <!-- page navigation -->
+
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center custom-pagination">
+        <li class="page-item">
+          <a class="page-link" href="index.html" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="recipe.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="recipe2.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="About.html">4</a></li>
+        <li class="page-item"><a class="page-link" href="contact.html">5</a></li>
+        <li class="page-item">
+          <a class="page-link" href="recipe2.html" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+        <!------------------------------------------------------------------------------------------------------------->
+    <!-- Back to Top button -->
+    <div class="back-button">
+      <button class="button-1" id="button-2">
+        Back to top <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------->
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-about">
+        <h3>About Tasteful Treasures</h3>
+        <p>
+          Your go-to destination for unique and delicious recipes, where you can
+          also share your own culinary creations!
+        </p>
+        <a href="About.html">Learn More</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>
+          Email:
+          <a href="mailto:info@tastefultreasures.com"
+            >info@tastefultreasures.com</a
+          >
+        </p>
+        <p>Phone: <a href="tel:+04172-47804">+123 456 789</a></p>
+        <a href="contact.html">Contact Form</a>
+      </div>
+
+      <div class="footer-nav">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com/tastefultreasures" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://instagram.com/tastefultreasures" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/tastefultreasures" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://pinterest.com/tastefultreasures" target="_blank"
+          ><i class="fab fa-pinterest-p"></i
+        ></a>
+      </div>
+
+      <div class="footer-newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form action="/subscribe" method="post">
+          <input type="email" name="email" placeholder="Your email" required />
+          <button type="submit" onclick="submited()">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-legal">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-and-conditions">Terms and Conditions</a>
+        <p>&copy; 2024 Tasteful Treasures. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!------------------------------------------------------------------------------------------------------------->
+    <!-- Bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document
+        .getElementById("button-2")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+        
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.toggle-btn').click(function() {
+          $(this).toggleClass('active');
+          $(this).next('.directions-list').slideToggle();
+        });
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+  var searchBar = document.getElementById('searchInput');
+  var recipeCards = document.querySelectorAll('.recipe-card');
+
+  searchBar.addEventListener('input', function (event) {
+    var enteredText = event.target.value.trim().toUpperCase();
+
+    recipeCards.forEach(function (recipeCard) {
+      var recipeTitle = recipeCard.querySelector('.recipe-title').textContent.toUpperCase();
+      var recipeDescription = recipeCard.querySelector('.recipe-description').textContent.toUpperCase();
+
+      if (recipeTitle.includes(enteredText) || recipeDescription.includes(enteredText)) {
+        recipeCard.style.display = 'block';
+      } else {
+        recipeCard.style.display = 'none';
+      }
+    });
+  });
+});
+
+function submited(){
+ alert('You have subscribed to our news letter');
+}
+    </script>
+    
+    <!------------------------------------------------------------------------------------------------------------->
+  </body>
+</html>
